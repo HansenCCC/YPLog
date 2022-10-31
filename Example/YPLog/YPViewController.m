@@ -7,6 +7,7 @@
 //
 
 #import "YPViewController.h"
+#import <YPLog/YPLog.h>
 
 @interface YPViewController ()
 
@@ -14,16 +15,13 @@
 
 @implementation YPViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    YPLogInfo(@"asdfasdfasd发送到发送");
 }
 
 @end
